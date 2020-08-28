@@ -1,0 +1,340 @@
+<html>
+	<head>
+
+		<style>
+			body { background:white;
+					background-size: 100%;
+					margin:0px;
+				}
+
+
+			#faixa {	background-color:#A9BCF5;
+					width: 100%;
+					height : 60px;
+					padding :0px;
+					border-width: 2px;
+ 					/*border-style: solid;*/
+ 					border-color: #BDBDBD;		
+				}
+
+			#faixa h3 {
+				padding: 18px; 
+			}
+
+			.principal {
+				width:100%;
+				height:508px;
+				padding-left:0px;
+				background:#CEE3F6;
+				border-color: #111111;
+				border-width: 2px;
+ 				/*border-style: solid;*/
+ 				border-color: #BDBDBD;	
+				}
+
+		.dados fieldset.sexo{
+				float: left;
+				position: relative;
+				left: 100px;
+				font-size: 10;
+				}
+
+			.status{
+				float: left;
+				position: relative;
+				left: 750px;
+			}
+
+			.numeros input.form-control{
+				padding:  0px;
+				position: relative;
+				left: 1px;
+				
+			}
+
+			.dado input.textarea {
+					float: left;
+					height:80px;
+					position: relative;
+					left: 980px;
+					}
+				
+			.botao {
+				padding: 10px;
+				float: right;
+
+				}
+
+			.footer {
+				top:80px;
+				left:0px;
+				background-color:#A9BCF5;
+				width:100%;
+				height:50px;
+				border-width: 2px;
+ 			/*	border-style: solid;*/
+ 				border-color: #BDBDBD;	
+					
+								}
+
+
+		</style>
+
+			<title> Dados Pessoais </title>
+
+	</head>
+
+	<body>
+		<div  id= "faixa" >
+			
+				<h3>Dados pessoais</h3>
+		
+		</div>
+		
+		<div class="principal">
+
+			<div class="dados">
+			
+
+				<form action="dadoPessoal.php" method="post"  
+				enctype="multipart/form-data">
+
+					<fieldset>
+					<legend>Dados principais</legend>
+					<label for="nomePaciente">Nome Completo</label>
+					<input type="text" name="nomePaciente" maxlength="40" size="90" value="">
+
+					<input type="file" name="foto"><p><br>
+
+					<label for="nomeMae">Nome da mãe</label>
+					<input type="text" name="nomeMae" maxlength="40" size="90" value=""><p>
+
+	<fieldset class="sexo">
+						<legend>Sexo</legend>
+					<input type="radio" 
+					name="sexoPaciente" 
+					value="M" checked>Masculino
+					<input type="radio" 
+					name="sexoPaciente" 
+					value="F">Feminino
+						
+					</fieldset>
+
+					
+				<div class="numeros">
+					<label 	for="rgPaciente">RG</label>
+					<input 	type="text" 
+							maxlength="9"
+							name="rgPaciente"
+							class="form-control rg-mask" 
+							placeholder="Ex.: 00-000-000/0"
+							value="">
+
+					<label 	for="cpfPaciente">CPF</label>
+					<input 	type="text"
+							maxlength="10" 
+							name="cpfPaciente"
+							class="form-control cpf-mask"
+							placeholder="Ex.: 000.000.000-00"
+							value="">
+
+
+
+					<label 	for="dtNascimento">Nascimento</label>
+					<input 	type="date"
+							name="dtNascimento" 
+							class="form-control date-mask" 
+							value="">
+				
+
+				
+
+
+					<input 	class="status" 
+							type="checkbox" 
+							name="statusAtividade">
+					<label 	for="statusAtividade" 
+							class="status">Ativo/Inativo</label>
+
+					</fieldset><p>
+				</div>
+
+
+					<fieldset>
+					<label 	for="estCivil">Estado civil</label>
+					<select name="estCivil" 
+							value="">
+						<option value=""></option>
+						<option value="C">Casado</option>
+						<option value="D">Divorciado</option>
+						<option value="S">Solteiro</option>
+						<option value="UE">União estável</option>
+						<option value="V">Viuvo</option>
+					</select>
+
+					<label for="corPaciente">Cor</label>
+						<select name="corPaciente" value="">
+							<option value=""></option>
+							<option value="A">Asiatico</option>
+							<option value="B">Branco</option>
+							<option value="N">Negro</option>
+							<option value="P">Pardo</option>
+						</select>
+
+						<label for="tipoSanguineo">Tipo sanguineo</label>
+						<select name="tipoSanguineo" value="">
+							<option value=""></option>
+							<option value="A+">A+</option>
+							<option value="A-">A-</option>
+							<option value="B+">B+</option>
+							<option value="B-">B-</option>
+							<option value="AB">AB</option>
+							<option value="O+">O+</option>
+							<option value="O-">O-</option>
+						</select>
+
+					<label for="dataCadastro">Data de cadastro</label>
+					<input 	type="date" 
+							name="dataCadastro"
+							value="">
+			
+
+				<p><label for="naturalidade">Naturalidade</label>
+					<select id="naturalidade" name="naturalidade">
+						<option value=""></option>
+						<option value="BA">Bahia</option>
+						<option value="CE">Ceará</option>
+						<option value="DF">Distrito Federal</option>
+						<option value="GO">Goiás</option>
+						<option value="MA">Maranhão</option>
+						<option value="MT">Mato Grosso</option>
+						<option value="MG">Minas Gerais</option>
+						<option value="PA">Pará</option>
+						<option value="PB">Paraíba</option>
+						<option value="PR">Paraná</option>
+						<option value="PE">Pernambuco</option>
+						<option value="PI">Piauí</option>
+						<option value="RJ">Rio de Janeiro</option>
+						<option value="RS">Rio Grande do Sul</option>
+						<option value="SC">Santa Catarina</option>
+						<option value="SP">São Paulo</option>
+						<option value="SE">Sergipe</option>
+						<option value="TO">Tocantins</option>
+					</select>
+
+	<label for="nacionalidade">Nacionalidade</label>
+		<select id="nacionalidade" name="nacionalidade">
+			<option value=""></option>
+   			<option value="Brasil">Brasil</option>
+			<option value="Outros">Outros</option>
+		</select>
+	</fieldset>
+<fieldset>
+
+			<legend>Contatos</legend><p>
+				<label for="emailPaciente">E-mail</label>
+					<input 	type="email" 
+							name="emailPaciente" 
+							maxlength="40" 
+							value="">
+
+				<label for="tel1">Telefone</label>
+					<input type="text" maxlength="11" name="tel1"
+					class="form-control phone-ddd-mask" placeholder="Ex.: 1100000000" value="">
+
+				<label for="tel2">Telefone</label>
+					<input type="text" maxlength="11" name="tel2" 
+					class="form-control phone-ddd-mask" placeholder="Ex.: 1100000000" value="">
+					
+
+				<label for="observacoes">Observações</label>
+					<textarea 	name="observacoes" 
+								maxlength="50"
+								class="textarea" 
+								value=""></textarea><p><br>
+					
+					
+				
+				<label for="cepResidencia">CEP</label>
+					<input type="text" maxlength="10" name="cepResidencia"
+					class="form-control cep-mask" placeholder="Ex.: 00000-000" value="">
+
+				<label for="endResidencia">Endereço</label>
+					<input type="text" name="endResidencia" maxlength="40" value="">
+
+				<label for="numResidencia">Numero</label>
+					<input type="number" maxlength="5" name="numResidencia" value=""><p><br>
+
+				<label for="compResidencia">Complemento</label>
+					<input type="text" name="compResidencia" maxlength="20" value="">
+
+				<label for="bairroResidencia">Bairro</label>
+					<input type="text" name="bairroResidencia" maxlength="30" value="">
+
+				<label for="cidResidencia">Cidade</label>
+					<select id="cidResidencia" 
+							name="cidResidencia" 
+							value="">
+
+							<option value=""></option>
+							<option value="BA">Bahia</option>
+							<option value="CE">Ceará</option>
+							<option value="DF">Distrito Federal</option>
+							<option value="GO">Goiás</option>
+							<option value="MA">Maranhão</option>
+							<option value="MT">Mato Grosso</option>
+							<option value="MG">Minas Gerais</option>
+							<option value="PA">Pará</option>
+							<option value="PB">Paraíba</option>
+							<option value="PR">Paraná</option>
+							<option value="PE">Pernambuco</option>
+							<option value="PI">Piauí</option>
+							<option value="RJ">Rio de Janeiro</option>
+							<option value="RS">Rio Grande do Sul</option>
+							<option value="SC">Santa Catarina</option>
+							<option value="SP">São Paulo</option>
+							<option value="SE">Sergipe</option>
+							<option value="TO">Tocantins</option>
+					</select>
+
+				<label for="ufEstado">UF</label>
+					<select id="ufEstado"name="ufEstado" value="">
+						<option value=""></option>
+    <option value="BA">BA</option>
+    <option value="CE">CE</option>
+    <option value="DF">DF</option>
+    <option value="GO">GO</option>
+    <option value="MA">MA</option>
+    <option value="MT">MT>
+    <option value="MG">MG</option>
+    <option value="PA">PA</option>
+    <option value="PB">PB</option>
+    <option value="PR">PR</option>
+    <option value="PE">PE</option>
+    <option value="PI">PI</option>
+    <option value="RJ">RJ</option>
+    <option value="RS">RS</option>
+    <option value="SC">SC</option>
+    <option value="SP">SP</option>
+    <option value="SE">SE</option>
+    <option value="TO">TO</option>
+					</select>
+				</fieldset>
+			<br>
+
+
+
+			<div class="botao">
+					<input type="reset" name="voltar" value="Voltar">
+					<input type="submit" name="enviar" value="Enviar">
+			</div>
+				
+			</div>
+
+			</form>
+		</div>
+
+			<footer class="footer"></footer>
+
+	</body>
+</html>

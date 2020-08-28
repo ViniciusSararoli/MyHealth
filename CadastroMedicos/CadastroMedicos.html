@@ -1,0 +1,236 @@
+<html>
+	<head>
+
+		   <style>
+       body { background:white;
+					background-size: 100%;
+					margin:0px;
+				}
+
+
+			#faixa {	background-color:#A9BCF5;
+					width: 100%;
+					height : 65px;
+					padding :0px;
+					border-width: 0px;
+ 					/*border-style: solid; */
+ 					border-color: #BDBDBD;		
+				}
+				
+				#faixa h3 {
+				padding: 18px; 
+			}
+
+			.principal {
+				width:100%;
+				height:480px;
+				padding-left:1px;
+				background:#CEE3F6;
+				border-color: #111111;
+				border-width: 4px;
+ 				/*border-style: solid;*/
+ 				border-color: #BDBDBD;	
+				}
+
+			label {
+    
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+
+			.dado input.textarea {
+					float: left;
+					height:380px;
+					position: relative;
+					left: 980px;
+					}
+
+				
+
+			.botao {
+			
+			padding: 10px;
+				float: right;
+
+				}
+
+			
+
+				.footer {
+				top:90px;
+				left:0px;
+				background-color:#A9BCF5;
+				width:100%;
+				margin-left: px;
+				height:60px;
+				border-width: 0px;
+ 			/*	border-style: solid;*/
+ 				border-color: #BDBDBD;	
+					
+								}
+								
+							
+
+
+		</style>
+
+			<title> Cadastrar Medicos</title>
+
+	</head>
+
+	<body>
+		<div  id= "faixa" border="1">
+			<h3>Cadastrar Médicos</h3>	
+		</div>
+		
+		<div class="principal">
+
+			<div class="dados">
+			
+				<fieldset><br><br>	
+				<form action="cadastroMedicos.php" method="post"  enctype="multipart/form-data">
+
+					<label for="nomeMedico">Nome do Médico</label>
+					<input type="text" name="nomeMedico" maxlength="40" size="90">
+
+
+					<input type="file" name="foto"><p><br>
+
+					
+
+					<label 	for="crm">CRM</label>
+					<input 	type="text" 
+							maxlength="9"
+							name="crm"> 
+							
+
+					
+					<label 	for="cpfMed">CPF</label>
+					<input 	type="text"
+							maxlength="11" 
+							name="cpfMed"
+							class="form-control cpf-mask"
+							placeholder="Ex.: 000.000.000-00">
+							
+							<label for="ufMed">UF</label>
+					<select id="ufMed" name="ufMed">
+					<option value=""></option>
+    <option value="AC">AC</option>
+    <option value="AL">AL</option>
+    <option value="AP">AP</option>
+    <option value="AM">AM</option>
+    <option value="BA">BA</option>
+    <option value="CE">CE</option>
+    <option value="DF">DF</option>
+    <option value="ES">ES</option>
+    <option value="GO">GO</option>
+    <option value="MA">MA</option>
+    <option value="MT">MT</option>
+    <option value="MS">MS</option>
+    <option value="MG">MG</option>
+    <option value="PA">PA</option>
+    <option value="PB">PB</option>
+    <option value="PR">PR</option>
+    <option value="PE">PE</option>
+    <option value="PI">PI</option>
+    <option value="RJ">RJ</option>
+    <option value="RN">RN</option>
+    <option value="RS">RS</option>
+    <option value="RO">RO</option>
+    <option value="RR">RR</option>
+    <option value="SC">SC</option>
+    <option value="SP">SP</option>
+    <option value="SE">SE</option>
+    <option value="TO">TO</option>
+					</select>
+
+					<br><br><br>
+
+				
+				
+				
+					<label for="cbos">CBOS(Especialidade)</label>
+						<select name="cbos">
+						<option value=""></option>
+	<option value="Ginecologia e Obstetricia">Ginecologia e Obstetricia</option>
+    <option value="Psiquiatria">Psiquiatria</option>
+    <option value="Dermatologia">Dermatologia</option>
+    <option value="Cardiologia">Cardiologia</option>
+    <option value="Oftalmologia">Oftalmologia</option>
+    <option value="ClÃ­nica Geral">ClÃ­nica Geral</option>
+    <option value="Ortopedia">Ortopedia</option>
+    <option value="Urologia">Urologia</option>
+    <option value="Pediatria">Pediatria</option>
+    <option value="Endocrinologia">Endocrinologia</option>
+    <option value="Acupuntura">Acupuntura</option>
+    <option value="Otorrinolaringologia">Otorrinolaringologia</option>
+    <option value="FonoaudiÃ³logo">FonoaudiÃ³logo</option>
+    <option value="Odontologia">Odontologia</option>
+    <option value="Fisioterapia">Fisioterapia</option>
+					</select>
+						
+
+					<label for="tipoMed">Tipo</label>
+						<select name="tipoMed">
+							<option value=""></option>
+							<option value="Executante">Executante</option>
+							<option value="Solicitante">Solicitante</option>
+							<option value="Ambos">Ambos</option>
+						</select>
+						
+						<label for="cns">CNS</label>
+					<input type="number" name="cns" maxlength="30">
+                       </fieldset><br>
+
+					
+					<fieldset>
+					<p><label for="emailMed">E-mail</label>
+					<input type="email" name="emailMed" maxlength="40">
+
+					<label for="tel1Med">Telefone</label>
+					<input type="text" maxlength="11" name="tel1Med"
+					class="form-control phone-ddd-mask" placeholder="Ex.: 1100000000">
+
+					<label for="tel2Med">Telefone</label>
+					<input type="text" maxlength="11" name="tel2Med" 
+					class="form-control phone-ddd-mask" placeholder="Ex.: 1100000000">
+                   
+                       <br><br>
+					   
+					   
+					<label for="bancoMed">Banco</label>
+					<input type="text" name="bancoMed" maxlength="20">
+					
+
+					<label for="agenciaMed">Agencia</label>
+					<input type="number" name="agenciaMed" maxlength="8">
+
+					<label for="contaMed">Conta</label>
+					<input type="number" maxlength="11" name="contaMed"><p><br>
+					
+
+				<label for="observacoes">Observações</label><p>
+					<textarea 	name="obs" 
+								maxlength="50"
+								class="textarea" 
+								value=""></textarea><p><br>
+						</fieldset><br>
+					
+
+					
+
+			<div class="botao">
+					<input type="reset" name="voltar" value="Voltar">
+					<input type="submit" name="enviar" value="Cadastrar">
+			</div>
+				
+			</div>
+
+			</form>
+		<HR></div>
+
+			<footer class="footer"></footer>
+
+	</body>
+</html>

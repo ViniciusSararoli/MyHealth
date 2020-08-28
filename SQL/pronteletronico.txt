@@ -1,0 +1,12 @@
+USE myhealth;
+CREATE TABLE prontuario (
+id INT AUTO_INCREMENT PRIMARY KEY ,
+nomePaciente VARCHAR(50) ,
+profissaoPac VARCHAR(50) ,
+alergias     BOOLEAN ,
+obs        TEXT    ,
+nomeMedico   VARCHAR(50) ,
+especialista VARCHAR(20) ,
+dataExame DATE ,
+exames VARCHAR(30)
+);

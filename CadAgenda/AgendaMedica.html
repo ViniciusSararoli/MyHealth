@@ -1,0 +1,42 @@
+<html>	<!-- salvar como login.html dentro de
+			C:\WAMP\WWW\[10-07.11.2019] LOGIN -->
+	<head>
+		<title>Login do Sistema</title>
+		<script>
+			function Validar()
+			{
+				// código da função
+				obj = document.getElementById("login")
+				objSenha = document.getElementById("senha")
+				
+				if ( obj.value=="")
+				{
+					alert("Nome deve ser preenchido !")
+					return (false)
+				}
+				
+				if ( objSenha.value=="")
+				{
+					alert("Senha deve ser preenchida !")
+					return (false)
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<h2>Login do Sistema</h2>
+		<form 	action="AgendaMedica.php" 
+				method="post"
+				onsubmit="return Validar()">
+			Login:
+			<input type="text" name="login" id="login"> <br>
+			Senha:
+			<input type="password" name="senha" id="senha">
+			<hr>
+			<input type="submit" value="Acessar"> <a href="CadAgenda2.php"></a>
+			
+		
+		</form>
+	</body>
+</html>

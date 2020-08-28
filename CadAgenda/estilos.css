@@ -1,0 +1,322 @@
+body {
+	background-size:cover;
+	margin:3px;
+	font-family:verdana;
+}
+
+
+	
+#principal {
+		border-width: 1px;
+		border-style: solid;
+		background-color: silver;
+		margin:5px auto;
+		width:1278px;
+		height:690px;
+		padding-left:10px;
+		}
+
+#principal01 {
+	/* background-color: blue; */
+	margin-left:1px;
+	border:1px;
+	padding:2px; /* Afasta o seu conteúdo das bordas */
+	width:799px;
+	height:390px; 
+	float:left; 
+			}
+
+#principal02 {
+	border-width: 1px;
+	border-style: solid;
+	/* background-color: yellow; */
+	margin-top:2px;
+	font-family: tahoma black;
+	padding:2px; /* Afasta o seu conteúdo das bordas */
+	width:453px;
+	height:543px; 
+	float:left;
+	}
+
+#principal03 {
+	/* background-color: red; */
+	margin-top:14px;
+	font-family: tahoma black;
+	padding:5px; /* Afasta o seu conteúdo das bordas */
+	width:440px;
+	height:380px;
+	float:left;
+	}
+	
+#principal04 {
+	/* background-color: green; */
+	margin-top:2px;
+	font-family: tahoma black;
+	padding:5px; /* Afasta o seu conteúdo das bordas */
+	width:775px;
+	height:150px;
+	
+	}
+
+
+#cabe{
+	/* background-color : #CEECF5 ; */
+	background-color: blue;
+	width:1240px;
+	height:30px;
+	/* background-color:gray; */
+	}
+
+#menu {
+		list-style : none;
+		padding-left:15px;
+		font-family : tahoma ;
+		font-size: 15px;
+	}
+	
+		
+#faixa {
+			border: 0px solid rgb(0,0,0);
+			background-color : white ;
+			height : 50px;
+			text-align : right;
+			font-family : tahoma ;
+			font-size: 25px;
+			padding-right: 15px;
+			
+		}
+#faixa a {color: black;}
+	
+		
+	#menu li{
+			width:242px;
+			height:55px;
+			border: 1px solid rgb(0,0,0);
+			/* background-color:rgb(0,0,0); */
+			float:left;
+			margin-left: 4px;
+			text-align: center;
+			background-color:#169CD9;
+			}
+			
+	#menu a {
+			width:242px;
+			height:55px;
+			font-family:tahoma;
+			font-size: 25px;
+			color: black;
+			text-decoration: none;
+			float:left;
+			}
+	
+	#menu a:link{
+			/*	background-color:rgb(91,155,213); */
+				}
+				
+	#menu a:visited{
+					color: red;
+					
+					}
+	
+	#menu a:hover{
+				color:black;
+				background-color:orange;
+				font-size: 25px;
+				}
+	
+	#menu a:active{
+					color:black;
+					background-color:gray;
+				}
+
+	#late{
+		font-family: tahoma black ;
+		font-size: 10px;
+		border: 1px solid rgb(0,0,0);
+		/* padding-top: 1px; */
+		height : 311px ;
+		width : 450px ;
+		float : right ;
+		}
+		
+	#late a{
+			font-family : tahoma;
+			font-size: 18px;
+		}
+
+	#cont{ 
+		border: 1px solid rgb(0,0,0);
+		height : 100px ;
+		width : 230px ;
+		font-family : tahoma black ;
+		font-size: 15px;
+		float: right ;
+		margin: 1px auto;
+		}
+
+	#roda{ 
+		background-color : #58ACFA ;
+		border: 1px solid rgb(0,0,0);
+		padding-top: 5px;
+		height : 130px ;
+		clear : both ;
+		}
+		
+		#tabela1 {
+		font-size: 15px;
+		margin-left: 10px;
+		margin-right: 2px;
+		}
+		
+	#tabela2 {
+		font-family : tahoma ;
+		font-size: 15px;
+		text-align: center;
+		padding: 5px;
+		width : 1200px ;
+		float : left ;
+		margin-left: 15px;
+		}	
+		
+		
+	#cont2 {
+			height : 380px ;
+			width : 830px ;
+			padding-left: 110px;
+			font-family : tahoma black ;
+			font-size: 18px;
+			float : left ;
+			}
+	
+	#forma1 {
+			font-family : tahoma black;
+			font-size:18px;
+			text-align: center;
+			margin-left: 3px;
+			height : 30px;
+			width : 200px;
+	
+			}
+
+	#forma2 {
+			font-size:15px;
+			text-align: center;
+			font-family : tahoma black;
+			margin-left: 3px;
+			height : 30px ;
+			width : 170px ;	
+			
+			}
+
+	#forma3	{
+			font-size:18px;
+			font-family : tahoma black;
+			margin-left: 3px;
+			height : 30px ;
+			width : 250px ;	
+			text-align: center;
+			background-color: white;
+			}
+	#forma4	{
+			font-size:14px;
+			font-family : tahoma black;
+			text-align: center;
+			height : 30px ;
+			width : 40px ;	
+			background-color: white;
+			}
+			
+	#forma5	{
+			font-size:14px;
+			font-family : tahoma black;
+			text-align: center;
+			height : 30px ;
+			width : 150px ;
+			background-color: white;
+			}
+
+	#forma6	{
+			font-size:14px;
+			font-family : tahoma black;
+			text-align: center;
+			height : 30px ;
+			width : 200px ;	
+			background-color: white;
+			}
+
+	#forma7	{
+			font-size:14px;
+			font-family : tahoma black;
+			margin-left: 3px;
+			height : 30px ;
+			width : 100px ;	
+			text-align: center;
+			}
+	#forma8	{
+			font-size:14px;
+			font-family : tahoma black;
+			margin-left: 3px;
+			height : 30px ;
+			width : 140px ;	
+			text-align: center;
+			}
+			
+	#forma9	{
+			font-size:18px;
+			font-family : tahoma black;
+			margin-left: 3px;
+			height : 30px ;
+			width : 357px ;	
+			text-align: left;
+			}
+			
+	#forma10 {
+			margin-left: 18px;
+			height : 30px ;
+			width : 160px ;	
+			background-color : white;
+			}
+
+	#forma11 {
+			margin-left: 5px;
+			height : 30px ;
+			width : 355px ;	
+			background-color : white;
+			}
+
+	#forma12	{
+			font-size:17px;
+			font-family: tahoma black;
+			height: 30px;
+			width:255px;
+			background-color :white;
+			}
+			
+	#forma13	{
+			font-size:17px;
+			font-family: tahoma black;
+			height: 95px;
+			width:439px;
+			background-color : white;
+			}
+			
+	#forma14	{
+			font-size:17px;
+			font-family: tahoma black;
+			height: 95px;
+			width:777px;
+			background-color : white;
+			}
+			
+			
+	#frmCadastro {
+		/* border:2px inset navy;  coloca borda no formulario */
+		padding:5px; /* Afasta o seu conteúdo das bordas */
+		color : navy;
+		font-size:15px;
+		}
+		
+h1 {text-align:center; font-size:28px;color:black;}
+
+input, textarea {background-color:white;}
+

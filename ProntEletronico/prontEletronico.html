@@ -1,0 +1,171 @@
+<html>
+	<head>
+
+		<style>
+			body { background:white;
+					background-size: 100%;
+					margin:0px;
+				}
+
+
+			#faixa {	background-color:#A9BCF5;
+					width: 100%;
+					height : 60px;
+					padding :0px;
+					border-width: 2px;
+ 					border-style: solid;
+ 					border-color: #BDBDBD;		
+				}
+
+			.principal {
+				width:100%px;
+				height:700px;
+				padding-left:100px;
+				background:#CEE3F6;
+				border-color: #111111;
+				border-width: 2px;
+ 				border-style: solid;
+ 				border-color: #BDBDBD;	
+				}
+
+			label {
+    
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+			.dadosMedico {
+				height:460px;/*altura*/
+				width:400px;/*largura*/
+				position:absolute;
+				top:150px;
+				left:880px;
+				
+			}
+
+				
+
+			.dadosPaciente {
+				height:460px;
+				width:400;
+				top:150px;
+				right:880px;
+				
+
+
+
+			}
+
+
+			#form1{
+				height:300px;
+				width:400px;
+				}
+
+
+				.footer {
+					 
+					top:60px;
+					left:0px;
+					background-color:#A9BCF5;
+					width:100%;
+					height:30px;
+					border-width: 2px;
+ 					border-style: solid;
+ 					border-color: #BDBDBD;	
+					
+								}
+
+
+		</style>
+
+			<title> Prontuario </title>
+
+	</head>
+
+	<body>
+		<div  id= "faixa" border="5">	
+		</div>
+		
+	<div class="principal">
+			
+			
+		<div class="dadosPaciente">
+			<br><h3>Prontuário</h3><br><br>
+
+				<form action="prontuario.php" method="post"  enctype="multipart/form-data">
+				
+				<!--<label for="n_Prontuario">N° Prontuario</label>-->
+				
+				<!--<input	type="number" name="n_prontuario" id="numero" min="0" max="114"><br>-->
+				
+					
+					<label for="nomePaciente">Nome do paciente</label>
+					<input type="text" name="nomePaciente" maxlength="40" size="50"> <br>
+						
+					<p><label for="profissaoPac">Profissao do paciente</label>
+					<input type="text" name="profissaoPac" maxlength="50"> <br>
+			
+					<p><label for = "alergias"> Tem alergia?</label>
+					<input type="radio" name= "alergias" value= "sim" > sim 
+					<input type= "radio" name= "alergias" value="nao"> nao		
+			
+					<p><label for = "obs">	Observações </label>
+				<input type= "textarea" name="obs" placeholder="Ex: o paciente tem alergia a medicação .." 
+				id="form1"  value="">
+	        
+		
+					<div class= "dadosMedico">
+					<p><label for="nomeMedico">Profissional</label>
+					<input type="text" name="nomeMedico" maxlength="20" size="50"> <br>
+				
+				<p><label for="Especialista">Especialista</label>
+					<select name="especialista">
+		<option value="Ginecologia e Obstetricia">Ginecologia e Obstetricia</option>
+		<option value="Psiquiatria">Psiquiatria</option>
+		<option value="Dermatologia">Dermatologia</option>
+		<option value="Cardiologia">Cardiologia</option>
+		<option value="Oftalmologia">Oftalmologia</option>
+		<option value="Clínica Geral">Clínica Geral</option>
+		<option value="Ortopedia">Ortopedia</option>
+		<option value="Urologia">Urologia</option>
+		<option value="Pediatria">Pediatria</option>
+		<option value="Endocrinologia">Endocrinologia</option>
+		<option value="Acupuntura">Acupuntura</option>
+		<option value="Otorrinolaringologia">Otorrinolaringologia</option>
+		<option value="Fonoaudiólogo">Fonoaudiólogo</option>
+		<option value="Odontologia">Odontologia</option>
+		<option value="Fisioterapia">Fisioterapia</option>
+					</select>
+					<p><label for="dataExame">Data do exame</label>
+					<input type="date" name="dataExame" maxlength="20" size="10"><br>
+					
+					<p>
+					<label for="exames">Exames</label>
+					<select name="exames"> 
+					<option value="raiox">Raio X </option> 
+					<option value="examedesangue">Exame de Sangue</option>
+					<option value="biopsia">Biopsia</option>
+				</select>
+	
+				<div class="botao">
+					<input type="reset" name="voltar" value="Voltar">
+					<input type="submit" name="enviar" value="Enviar">
+			</div>
+			</div>
+		</div>
+		
+		
+	
+
+		</form>
+	</div>				
+		
+		
+		
+
+			<footer class="footer"></footer>
+
+	</body>
+</html>

@@ -1,0 +1,17 @@
+CREATE DATABASE myhealth;
+
+USE myhealth;
+
+CREATE TABLE marcacaoConsulta (
+id				   	 INT AUTO_INCREMENT PRIMARY KEY  ,
+nomePaciente         	 	 	 VARCHAR(30)                     ,
+cpfPaciente			 	 CHAR(11)                        ,
+especialidade         			 VARCHAR(20)                     ,
+Profissional          			 VARCHAR(30)        	         ,
+data                 			 DATE                            ,
+hora                  		 	 TIME                            ,
+emailPaciente         		 	 VARCHAR(40)                     ,	
+tel1                  		 	 CHAR(11)                        ,
+tel2                 		 	 CHAR(11)                        ,
+observacoes           		 	 TEXT               
+);

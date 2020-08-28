@@ -1,0 +1,24 @@
+USE myhealth;
+
+CREATE TABLE cadastromedicos (
+
+id		 INT AUTO_INCREMENT PRIMARY KEY  ,
+nomeMedico	 VARCHAR(80),
+foto		 VARCHAR(100) 
+crm		 INT(11) ,
+ufMed		 VARCHAR(40),
+cpfMed		 CHAR(12),
+cbos		 VARCHAR(40),
+tipoMed		 VARCHAR(40),	
+cns		 INT(30),
+emailMed	 VARCHAR(40),
+tel1Med		 CHAR	(11),
+tel2Med		 CHAR	(11),
+bancoMed	 VARCHAR(40),
+agenciaMed	 INT	(11),
+contaMed	 INT	(11),
+obs		 TEXT	    ,
+
+
+);
+	

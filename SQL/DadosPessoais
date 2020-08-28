@@ -1,0 +1,30 @@
+USE myhealth;
+
+CREATE TABLE dadopessoal (
+id			  INT	PRIMARY KEY auto_increment	 ,
+nomePaciente		  VARCHAR(30) PRIMARY KEY	 	 ,
+foto 			  FILE					 ,
+nomeMae			  VARCHAR(30)	 		 	 ,
+rgPaciente		  CHAR(9)	 		 	 ,
+cpfPaciente		  CHAR(11)			 	 ,
+sexoPaciente		  CHAR(1)		 	 	 ,
+dtNascimento		  DATE				 	 ,
+statusAtividade		  BOOLEAN		 	 	 ,
+estadoCivil		  VARCHAR(20)	 		 	 ,
+corPaciente		  VARCHAR(10)	 			 ,
+naturalidade		  VARCHAR(30)	 		 	 ,
+nacionalidade		  VARCAHR(30)	 			 ,
+tipoSanguineo		  INT(5)		 	 	 ,
+dataCadastro		  INT(5)	   	 		 ,
+emailPaciente		  VARCAHR(40)	 			 ,
+tel1			  CHAR(11)			 	 ,
+tel2			  CHAR(11)		 	 	 ,
+observacoes		  TEXT			 	 	 ,
+cepResidencia		  CHAR(8)		 	 	 ,
+endResidencia		  VARCHAR(30)	 			 ,
+numResidencia		  INT(5)		 	 	 ,
+compResidencia		  VARCHAR(20)	 		 	 ,
+bairroResidencia	  VARCHAR(30)	 		 	 ,
+cidResidencia		  VARCHAR(15)	 		 	 ,
+ufEstado		  CHAR(2) 
+);

@@ -1,0 +1,235 @@
+<html> <!-- Pagina Agenda.html --->
+	<head>
+		<title>Sistema de Agenda - Consultório Médico</title>
+		<link	rel="stylesheet"
+				type="text/css"
+				href="estilos.css">
+	</head>
+	
+	<form 	action="CadAgenda.php"
+			method="post"
+			enctype="multipart/form-data">
+			<!--id="frmCadastro" -->
+
+	<body>
+	<div id="principal">
+	
+		<div align="center"> <font face="tahoma Black"> 
+			<h2>Sistema de Agenda</h2>
+			<hr>
+		</div>
+		
+			Medico.:
+				<input type="text" name="medico" id="forma1" list="listMed">
+					<datalist id="listMed">
+						<option value="Dr. Alberto">
+						<option value="Dr. Carlos">
+						<option value="Dr. Marcos">
+						<option value="Dr. Silveira">
+						<option value="Dra. Aline">
+						<option value="Dra. Silvia">
+						<option value="Dra. Luiza"
+						required>
+					</datalist>
+				
+				Data da Consulta:
+				<input	type="date"
+						name="dataConsulta"
+						min="2019-01-01"
+						max="2019-12-31"
+						value="" id="forma2"><br><br>
+		
+		<div id="principal01">
+		<!-- <fieldset> -->
+		<!-- <div id="principal02"> -->
+			<table border="1">
+				<!-- 1º linha -->
+				<tr bgcolor="gray">
+					<th width="100" rowspan="1">Hora</th>
+					<th width="250" rowspan="1">Paciente</th>
+					<th width="100" rowspan="1">Tipo</th>
+					<th width="100" rowspan="1">Status</th>
+				</tr>
+	
+
+				<tr>
+					<th><input	type="text" name="hora01"
+								value="08:30" id="forma4"</th>
+					<td><input type="text" name="nomePaciente" id="forma3"> </td>
+					<td><input type="text" name="statusAtividade" id="forma5"></td>
+					<td><input type="text" name="situacao"
+							id="forma6"
+							list="ListaSitua"></td>
+				</tr>
+
+				<tr>
+					<th><input	type="text"name="hora02"
+								value="09:30" id="forma4"</th>
+					<td><input type="text" name="nomePaciente" id="forma3"> </td>
+					<td><input type="text" name="statusAtividade" id="forma5"></td>
+					<td><input type="text" name="situacao"
+							id="forma6"
+							list="ListaSitua"></td>
+				</tr>
+
+				<tr>
+					<th><input	type="text" name="hora03"
+								value="10:30" id="forma4"</th>
+					<td><input type="text" name="nomePaciente" id="forma3"> </td>
+					<td><input type="text" name="statusAtividade" id="forma5"></td>
+					<td><input type="text" name="situacao"
+							id="forma6"
+							list="ListaSitua"></td>
+				</tr>
+				<tr>
+					<th><input	type="text" name="hora04"
+								value="11:30" id="forma4"</th>
+					<td><input type="text" name="nomePaciente" id="forma3"> </td>
+					<td><input type="text" name="statusAtividade" id="forma5"></td>
+					<td><input type="text" name="situacao"
+							id="forma6"
+							list="ListaSitua"></td>
+				</tr>
+				<tr>
+					<th><input	type="text" name="hora05"
+								value="13:30" id="forma4"</th>
+					<td><input type="text" name="nomePaciente" id="forma3"> </td>
+					<td><input type="text" name="statusAtividade" id="forma5"></td>
+					<td><input type="text" name="situacao"
+							id="forma6"
+							list="ListaSitua"></td>
+				</tr>
+				<tr>
+					<th><input	type="text" name="hora06"
+								value="14:30" id="forma4"</th>
+					<td><input type="text" name="nomePaciente" id="forma3"> </td>
+					<td><input type="text" name="statusAtividade" id="forma5"></td>
+					<td><input type="text" name="situacao"
+							id="forma6"
+							list="ListaSitua"></td>
+				</tr>
+				<tr>
+					<th><input	type="text" name="hora07"
+								value="15:30" id="forma4"</th>
+					<td><input type="text" name="nomePaciente" id="forma3"> </td>
+					<td><input type="text" name="statusAtividade" id="forma5"></td>
+					<td><input type="text" name="situacao"
+							id="forma6"
+							list="ListaSitua"></td>
+				</tr>
+				<tr>
+				<th><input	type="text" name="hora08"
+							value="16:30" id="forma4"</th>
+					<td><input type="text" name="nomePaciente" id="forma3"> </td>
+					<td><input type="text" name="statusAtividade" id="forma5"></td>
+					<td><input type="text" name="situacao"
+							id="forma6"
+							list="ListaSitua"></td>
+				</tr>
+				<tr>
+				<th><input	type="text" name="hora09"
+							value="17:30" id="forma4"</th>
+					<td><input type="text" name="nomePaciente" id="forma3"> </td>
+					<td><input type="text" name="statusAtividade" id="forma5"></td>
+					<td><input type="text" name="situacao"
+							id="forma6"
+							list="ListaSitua"></td>
+				</tr>
+				<tr>
+				<th><input	type="text" name="hora10"
+							value="18:30" id="forma4"</th>
+					<td><input type="text" name="nomePaciente" id="forma3"> </td>
+					<td><input type="text" name="statusAtividade" id="forma5"></td>
+					<td><input type="text" name="situacao"
+							id="forma6"
+							list="ListaSitua"></td>
+				</tr>
+
+					<datalist id="ListaSitua">
+						<option value="Agendado">
+						<option value="Em Atendimento">
+						<option value="Aguardando">
+						<option value="Confirmação">
+						<option value="Cancelado">
+					</datalist>	
+				<!-- </td> -->
+			</table>
+			
+			<div id="principal04">
+				<h3 align="center">Notas do Dia<h3>
+				<textarea name="observacao" id="forma14">
+				</textarea>
+			</div>
+
+		</div>
+	
+				<div id="principal02" align="center">
+					<h4>--  AGENDAMENTO  --</h4>
+					<hr>
+					
+					<div id="tabela1" align="left">
+						<body>
+							Data.:
+							<input type="date" name="dataConsulta2" id="forma2">
+							Horário.: 
+							<input type="text" name="horaMarcada" id="forma7" list="listHora" align="center"><br>
+							
+							<datalist id="listHora">
+								<option value="08:30">
+								<option value="09:30">
+								<option value="10:30">
+								<option value="11:30">
+								<option value="13:30">
+								<option value="14:30">
+								<option value="15:30">
+								<option value="16:30">
+								<option value="17:30">
+								<option value="18:30">
+							</datalist>
+							<datalist id="ListAtendi">
+								<option value="Agendado">
+								<option value="Em Atendimento">
+								<option value="Aguardando">
+								<option value="Confirmação">
+								<option value="Cancelado">
+							</datalist>
+						</body>
+					</div>
+					
+					<div id="principal03" align="left">
+						Status.: 
+								<input type="text" name="tipoAtendimento" id="forma8"
+								list="ListAtendi">
+						Cod Cliente.:
+							<input type="Text" name="codCadastro" id="forma7">
+							<br><br>
+						Nome.: 
+							<input type="text" name="nomePaciente" id="forma9">
+							<br><br>
+						Tel Contato.: 
+							<input type="text" name="tel1" id="forma10" placeholder="(00)00000000">
+							<br><br>					
+						E-mail.:
+							<input type="email" name="emailPaciente" maxlength="50" id="forma11">
+							<br><br>
+						Convenio.: 
+							<input type="text" name="convenio" id="forma12">
+							<br><br>
+						Obs................: <br><br>
+							<textarea name="observacoes" id="forma13">
+							</textarea>
+							<br>
+						<div align="center">
+						<br>
+							<input type="reset" value="Limpar">
+							<input type="submit" value="Gravar">
+						</div>	
+					</div>
+				</div>	
+				
+			</div>
+	</div>
+	</form>		
+
+	</body>
+</html>
